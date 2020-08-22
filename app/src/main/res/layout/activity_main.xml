@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:clickable="true"
     tools:context=".MainActivity">
 
     <TabHost
@@ -20,80 +22,89 @@
             <TabWidget
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
-                android:layout_height="90dp"
-                />
+                android:layout_height="90dp" />
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <RelativeLayout
                     android:id="@+id/tabMonedas"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
                     <TextView
                         android:id="@+id/lblDeM"
-                        android:text="DE:"
-                        android:layout_marginTop="40dp"
-                        android:layout_marginLeft="60dp"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="40dp"
+                        android:text="DE:" />
+
                     <Spinner
                         android:id="@+id/cboDeM"
-                        android:layout_marginTop="40dp"
-                        android:layout_marginLeft="100dp"
-                        android:entries="@array/Monedas"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="40dp"
+                        android:entries="@array/Monedas" />
+
                     <TextView
                         android:id="@+id/lblAM"
-                        android:text="A:"
-                        android:layout_marginTop="90dp"
-                        android:layout_marginLeft="60dp"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="90dp"
+                        android:text="A:" />
+
                     <Spinner
                         android:id="@+id/cboAM"
-                        android:layout_marginTop="90dp"
-                        android:layout_marginLeft="100dp"
-                        android:entries="@array/Monedas"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="90dp"
+                        android:entries="@array/Monedas" />
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:id="@+id/tabLongitud"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
                     <TextView
                         android:id="@+id/lblDeL"
-                        android:text="DE:"
-                        android:layout_marginTop="40dp"
-                        android:layout_marginLeft="60dp"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="40dp"
+                        android:text="DE:" />
+
                     <Spinner
                         android:id="@+id/cboDeL"
-                        android:layout_marginTop="40dp"
-                        android:layout_marginLeft="100dp"
-                        android:entries="@array/Longitud"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="40dp"
+                        android:entries="@array/Longitud" />
+
                     <TextView
                         android:id="@+id/lblAL"
-                        android:text="A:"
-                        android:layout_marginTop="90dp"
-                        android:layout_marginLeft="60dp"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="90dp"
+                        android:text="A:" />
+
                     <Spinner
                         android:id="@+id/cboAL"
-                        android:layout_marginTop="90dp"
-                        android:layout_marginLeft="100dp"
-                        android:entries="@array/Longitud"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="90dp"
+                        android:entries="@array/Longitud" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -101,34 +112,38 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
                     <TextView
                         android:id="@+id/lblDema"
-                        android:text="DE:"
-                        android:layout_marginTop="40dp"
-                        android:layout_marginLeft="60dp"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="40dp"
+                        android:text="DE:" />
+
                     <Spinner
                         android:id="@+id/cboDema"
-                        android:layout_marginTop="40dp"
-                        android:layout_marginLeft="100dp"
-                        android:entries="@array/Masa"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="40dp"
+                        android:entries="@array/Masa" />
+
                     <TextView
                         android:id="@+id/lblAma"
-                        android:text="A:"
-                        android:layout_marginTop="90dp"
-                        android:layout_marginLeft="60dp"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="90dp"
+                        android:text="A:" />
+
                     <Spinner
                         android:id="@+id/cboAma"
-                        android:layout_marginTop="90dp"
-                        android:layout_marginLeft="100dp"
-                        android:entries="@array/Masa"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="90dp"
+                        android:entries="@array/Masa" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -136,168 +151,192 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
                     <TextView
                         android:id="@+id/lblDeT"
-                        android:text="DE:"
-                        android:layout_marginTop="40dp"
-                        android:layout_marginLeft="60dp"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="40dp"
+                        android:text="DE:" />
+
                     <Spinner
                         android:id="@+id/cboDeT"
-                        android:layout_marginTop="40dp"
-                        android:layout_marginLeft="100dp"
-                        android:entries="@array/Tiempo"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="40dp"
+                        android:entries="@array/Tiempo" />
+
                     <TextView
                         android:id="@+id/lblAT"
-                        android:text="A:"
-                        android:layout_marginTop="90dp"
-                        android:layout_marginLeft="60dp"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="90dp"
+                        android:text="A:" />
+
                     <Spinner
                         android:id="@+id/cboAT"
-                        android:layout_marginTop="90dp"
-                        android:layout_marginLeft="100dp"
-                        android:entries="@array/Tiempo"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="90dp"
+                        android:entries="@array/Tiempo" />
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:id="@+id/tabAlmacenamiento"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
                     <TextView
                         android:id="@+id/lblDeA"
-                        android:text="DE:"
-                        android:layout_marginTop="40dp"
-                        android:layout_marginLeft="60dp"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="40dp"
+                        android:text="DE:" />
+
                     <Spinner
                         android:id="@+id/cboDeA"
-                        android:layout_marginTop="40dp"
-                        android:layout_marginLeft="100dp"
-                        android:entries="@array/Almacenamiento"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="40dp"
+                        android:entries="@array/Almacenamiento" />
+
                     <TextView
                         android:id="@+id/lblAA"
-                        android:text="A:"
-                        android:layout_marginTop="90dp"
-                        android:layout_marginLeft="60dp"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="90dp"
+                        android:text="A:" />
+
                     <Spinner
                         android:id="@+id/cboAA"
-                        android:layout_marginTop="90dp"
-                        android:layout_marginLeft="100dp"
-                        android:entries="@array/Almacenamiento"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="90dp"
+                        android:entries="@array/Almacenamiento" />
                 </RelativeLayout>
+
                 <RelativeLayout
-                android:id="@+id/tabVolumen"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-                <TextView
-                    android:id="@+id/lblDeV"
-                    android:text="DE:"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginLeft="60dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <Spinner
-                    android:id="@+id/cboDeV"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginLeft="100dp"
-                    android:entries="@array/Volumen"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                <TextView
-                    android:id="@+id/lblAV"
-                    android:text="A:"
-                    android:layout_marginTop="90dp"
-                    android:layout_marginLeft="60dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <Spinner
-                    android:id="@+id/cboAV"
-                    android:layout_marginTop="90dp"
-                    android:layout_marginLeft="100dp"
-                    android:entries="@array/Volumen"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RelativeLayout>
+                    android:id="@+id/tabVolumen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblDeV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="40dp"
+                        android:text="DE:" />
+
+                    <Spinner
+                        android:id="@+id/cboDeV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="40dp"
+                        android:entries="@array/Volumen" />
+
+                    <TextView
+                        android:id="@+id/lblAV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="90dp"
+                        android:text="A:" />
+
+                    <Spinner
+                        android:id="@+id/cboAV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="90dp"
+                        android:entries="@array/Volumen" />
+                </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/tabTrasnferenciaDatos"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
                     <TextView
                         android:id="@+id/lblDeTD"
-                        android:text="DE:"
-                        android:layout_marginTop="40dp"
-                        android:layout_marginLeft="60dp"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="40dp"
+                        android:text="DE:" />
+
                     <Spinner
                         android:id="@+id/cboDeTD"
-                        android:layout_marginTop="40dp"
-                        android:layout_marginLeft="100dp"
-                        android:entries="@array/Transferenciadedatos"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="40dp"
+                        android:entries="@array/Transferenciadedatos" />
+
                     <TextView
                         android:id="@+id/lblATD"
-                        android:text="A:"
-                        android:layout_marginTop="90dp"
-                        android:layout_marginLeft="60dp"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="90dp"
+                        android:text="A:" />
+
                     <Spinner
                         android:id="@+id/cboATD"
-                        android:layout_marginTop="90dp"
-                        android:layout_marginLeft="100dp"
-                        android:entries="@array/Transferenciadedatos"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="90dp"
+                        android:entries="@array/Transferenciadedatos" />
                 </RelativeLayout>
 
             </FrameLayout>
         </LinearLayout>
     </TabHost>
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#00FFFFFF"
+        android:clickable="true">
+
         <EditText
             android:id="@+id/txtCantidad"
-            android:layout_marginTop="300dp"
-            android:layout_marginLeft="100dp"
-            android:hint="Cantidad a convertir"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/btnCalcular"
-            android:text="Calcular"
-            android:layout_marginTop="350dp"
-            android:layout_marginLeft="150dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="300dp"
+            android:hint="Cantidad a convertir" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="350dp"
             android:onClick="calcular"
+            android:text="Procesar"
             tools:ignore="OnClick" />
+
         <TextView
             android:id="@+id/lblrespuesta"
-            android:text="Respuesta: ?"
-            android:layout_marginTop="400dp"
-            android:layout_marginLeft="100dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="400dp"
+            android:text="Respuesta:" />
 
     </RelativeLayout>
 </RelativeLayout>
